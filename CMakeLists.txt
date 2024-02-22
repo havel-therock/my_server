@@ -5,11 +5,11 @@ set(HCC_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
 # find packages go here.
 
-# the rest of the default configuration is happening
-project(
-    asio-server
-    VERSION 1.0
-    LANGUAGES CXX)
+# the rest of the default configuration is happening during project call
+# project(
+#    asio-server
+#    VERSION 1.0
+#    LANGUAGES CXX)
 
 add_subdirectory(src)
 add_subdirectory(vendor)

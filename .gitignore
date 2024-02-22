@@ -4,3 +4,7 @@ CMakeUserPresets.json
 
 # generated
 out/
+.cache/
+
+# link to a compile_commands.json in the project root
+compile_commands.json

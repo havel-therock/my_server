@@ -1,17 +1,12 @@
 cmake_minimum_required(VERSION 3.25.1)
 
+project(hcc-server
+    VERSION 1.0
+    LANGUAGES CXX)
 
-project(server-core)
 
-set(HEADERS
-    server.h
-    )
+add_subdirectory(server)
 
-set(SOURCES
-    server.cpp
-    )
+add_executable(${PROJECT_NAME} main.cpp)
 
-add_library(${PROJECT_NAME} ${HEADERS} ${SOURCES})
-target_include_directories(${PROJECT_NAME} PUBLIC ${HCC_ROOT_DIR}/vendor/asio/asio/include/)
-target_link_libraries(${PROJECT_NAME} PRIVATE asio)
-
+target_link_libraries(${PROJECT_NAME} PRIVATE server-core)

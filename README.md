@@ -1,5 +1,6 @@
 # my\_server
 My server application...
+HCC - Home Command Center
 
 TODO: @Kacper
 * hook up simple socket clients
